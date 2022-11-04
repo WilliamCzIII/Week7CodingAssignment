@@ -10,6 +10,7 @@ project_name varchar(128) not null,
 estimated_hours int,
 actual_hours int,
 difficulty int,
+
 notes text,
 primary key (project_id)
 );
