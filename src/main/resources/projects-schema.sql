@@ -1,14 +1,14 @@
 drop table if exists material;
 drop table if exists step;
-drop table if exists recipe_category;
+drop table if exists project_category;
 drop table if exists category;
 drop table if exists project;
 
 create table project(
 project_id int auto_increment not null,
 project_name varchar(128) not null,
-estimated_hours int,
-actual_hours int,
+estimated_hours decimal(7,2),
+actual_hours decimal(7,2),
 difficulty int,
 
 notes text,
